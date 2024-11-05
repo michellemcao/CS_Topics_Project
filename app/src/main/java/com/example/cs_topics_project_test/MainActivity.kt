@@ -13,6 +13,8 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.cs_topics_project_test.databinding.ActivityMainBinding
+import androidx.core.content.ContextCompat
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,12 +31,13 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
 
         // Set up the FAB click listener
+        binding.fab.setImageResource(R.drawable.baseline_chat_24) // Change FAB icon here
+        binding.fab.imageTintList = ContextCompat.getColorStateList(this, android.R.color.white)
         binding.fab.setOnClickListener { view: View ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "Chat Function Unavailable for now ;)", Snackbar.LENGTH_LONG)
                 .setAction("Action", null)
                 .show()
         }
-
         // Setup drawer layout and navigation
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
