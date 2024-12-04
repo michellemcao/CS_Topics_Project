@@ -3,6 +3,10 @@ package com.example.cs_topics_project_test
 import android.os.Bundle
 import android.view.Menu
 import android.view.View
+import android.widget.CalendarView
+import android.widget.CalendarView.OnDateChangeListener
+import android.widget.TextView
+import androidx.activity.enableEdgeToEdge
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -16,22 +20,26 @@ import com.example.cs_topics_project_test.databinding.ActivityMainBinding
 import androidx.core.content.ContextCompat
 
 
+
 class MainActivity : AppCompatActivity() {
+
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        //setContentView(R.layout.activity_main)
 
         // Set the toolbar using the correct binding reference
         setSupportActionBar(binding.toolbar)
 
         // Set up the FAB click listener
-        binding.fab.setImageResource(R.drawable.baseline_chat_24) // Change FAB icon here
+        //binding.fab.setImageResource(R.drawable.baseline_chat_24) // Change FAB icon here
         binding.fab.imageTintList = ContextCompat.getColorStateList(this, android.R.color.white)
         binding.fab.setOnClickListener { view: View ->
             Snackbar.make(view, "Chat Function Unavailable for now ;)", Snackbar.LENGTH_LONG)
@@ -50,6 +58,8 @@ class MainActivity : AppCompatActivity() {
 
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
