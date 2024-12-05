@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.CalendarView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.fragment.app.Fragment
 import com.example.cs_topics_project_test.R
@@ -33,13 +34,12 @@ class CalendarFragment : Fragment() {
 
         // to update the date on calendar
         calendarView.setOnDateChangeListener {_, year, month, day ->
-            val date = ("%02d".format(month+1) + "/"
+            val date = ("Tasks for " + "%02d".format(month+1) + "/"
                     + "%02d".format(day) + "/"
-                    + "%02d".format(year)) // date displayed in calendar_main in mm/dd/yyyy format
+                    + "%02d".format(year) + ":") // date displayed in calendar_main in mm/dd/yyyy format
             dateViewVar.text = date
 
         }
-
     }
         //super.onCreate(savedInstanceState)
         // enableEdgeToEdge()

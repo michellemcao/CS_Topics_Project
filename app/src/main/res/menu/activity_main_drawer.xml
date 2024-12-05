@@ -16,9 +16,11 @@
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_slideshow" />
+
+        <!--adding calendar feature (the drawing part) to navigation side panel-->
         <item
             android:id="@+id/nav_calendar"
-            android:icon="@drawable/ic_calendar"
+            android:icon="@drawable/ic_menu_calendar"
             android:title="@string/menu_calendar" />
     </group>
 </menu>
