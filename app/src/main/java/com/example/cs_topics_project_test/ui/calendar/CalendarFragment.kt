@@ -36,7 +36,6 @@ class CalendarFragment : Fragment() {
                     + "%02d".format(day) + "/"
                     + "%02d".format(year) + ":") // date displayed in calendar_main in mm/dd/yyyy format
             dateViewVar.text = date
-
         }
     }
         //super.onCreate(savedInstanceState)
