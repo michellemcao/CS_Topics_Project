@@ -1,7 +1,7 @@
 # Athena Productivity
 
 // insert sales pitch here
-
+## Progress
 ### Completed: 
 - Preliminary UI
 - Calendar
@@ -17,10 +17,12 @@
 - Audio Calls
 - Video Calls
 
-## Problems faced:
+## Problems Faced
 - a disappearing navigation bar
 - a scaling problem
 
+## The Method
 ### Process
 
+## The Attribution
 ### Citation
