@@ -13,8 +13,11 @@
 
 ### To-do:
 - Data Storage w/ SQL
+- Team Accounts (Group Calendar, Assigning Tasks to specific individuals, etc)
+- Audio Calls
+- Video Calls
 
-### Problems faced:
+## Problems faced:
 - a disappearing navigation bar
 - a scaling problem
 
