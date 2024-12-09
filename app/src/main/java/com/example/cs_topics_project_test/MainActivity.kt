@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+
         // Setup drawer layout and navigation
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView

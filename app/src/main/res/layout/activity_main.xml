@@ -29,7 +29,7 @@
                 android:id="@+id/titleTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Organizer App"
+                android:text="Athena"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/recyclerView"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -55,7 +55,9 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:menu="@menu/activity_main_drawer"
-        app:headerLayout="@layout/nav_header_main" />
+        app:headerLayout="@layout/nav_header_main"
+        app:itemIconTint="@color/pink_500"
+        app:itemTextColor="@color/pink_500"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
