@@ -1,4 +1,4 @@
-package com.example.cs_topics_project_test.ui.main
+package com.example.cs_topics_project_test.ui.chat
 
 import java.io.Serializable
 

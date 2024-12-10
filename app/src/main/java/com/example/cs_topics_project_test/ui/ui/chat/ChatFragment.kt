@@ -1,4 +1,4 @@
-package com.example.cs_topics_project_test.ui.main
+package com.example.cs_topics_project_test.ui.chat
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cs_topics_project_test.R
-import com.example.cs_topics_project_test.ui.main.ChatFragment
+import com.example.cs_topics_project_test.ui.chat.ChatFragment
 
 class ChatFragment : Fragment() {
 

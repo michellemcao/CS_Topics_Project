@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import com.example.cs_topics_project_test.R
-import com.example.cs_topics_project_test.ui.main.ChatFragment
-import com.example.cs_topics_project_test.ui.main.Person
+import com.example.cs_topics_project_test.ui.chat.ChatFragment
+import com.example.cs_topics_project_test.ui.chat.Person
 
 
 class ChatActivity : AppCompatActivity() {
