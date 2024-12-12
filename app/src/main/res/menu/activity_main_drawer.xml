@@ -8,14 +8,14 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home" />
-        <item
+        <!--<item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_gallery" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="@string/menu_slideshow" />-->
 
         <!--adding calendar feature (the drawing part) to navigation side panel-->
         <item
@@ -24,7 +24,7 @@
             android:title="@string/menu_calendar" />
         <item
             android:id="@+id/nav_tasks"
-            android:icon="@drawable/ic_menu_calendar"
+            android:icon="@drawable/ic_menu_tasks"
             android:title="@string/menu_tasks" />
     </group>
 </menu>

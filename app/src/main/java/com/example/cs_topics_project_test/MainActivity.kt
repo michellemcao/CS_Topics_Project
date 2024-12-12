@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
 
         // Set up the FAB click listener
-        //binding.fab.setImageResource(R.drawable.baseline_chat_24) // Change FAB icon here
+        binding.fab.setImageResource(R.drawable.baseline_chat_24) // Change FAB icon here
         binding.fab.imageTintList = ContextCompat.getColorStateList(this, android.R.color.white)
         binding.fab.setOnClickListener {
             // Navigate to ChatActivity
