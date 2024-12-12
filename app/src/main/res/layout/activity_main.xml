@@ -54,7 +54,10 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:menu="@menu/activity_main_drawer" />
+        app:menu="@menu/activity_main_drawer"
+        app:headerLayout="@layout/nav_header_main"
+        app:itemIconTint="@color/pink_500"
+        app:itemTextColor="@color/pink_500"/>
 
     <!--michelle stuff-->
     <com.google.android.material.floatingactionbutton.FloatingActionButton

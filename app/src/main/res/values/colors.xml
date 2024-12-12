@@ -11,6 +11,7 @@
     <color name="pink_300">#FF6F61</color>
     <color name="pink_500">#FF4081</color>
     <color name="pink_700">#C51162</color>
+    <color name="gray_200">#A8A0A0</color>
 
     <color name="calendar_primary">#FF0000</color>
     <color name="calendar_secondary">#00FF00</color>
