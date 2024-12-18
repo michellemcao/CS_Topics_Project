@@ -1,19 +1,17 @@
 package com.example.cs_topics_project_test.function
 
-class Time(hour: Int, min: Int, isAm: Boolean) {
-    private var hour: Int = 0
+class Time(hour: Int, min: Int, second: Int) {
+    private val hour: Int
     private val min: Int
-    private var isAm: Boolean = false
+    private val second: Int
 
     init {
-        var hour = hour
-        this.min = min % 60
-        if (min > 60) {
-            hour += min / 60
-        }
-        require(hour <= 24) { "Invalid Time entered" }
-        this.hour = hour % 12
-        this.isAm = hour < 12
+        if (hour > 24) throw IllegalArgumentException("invalid hour as input")
+        else this.hour = hour
+        if (min > 60) throw IllegalArgumentException("invalid minute as input")
+        else this.min = min
+        if (second > 60) throw IllegalArgumentException("invalid minute as input")
+        else this.second = second
     }
 
     fun getHour(): Int {
@@ -24,15 +22,11 @@ class Time(hour: Int, min: Int, isAm: Boolean) {
         return this.min
     }
 
-    fun isAm(): Boolean {
-        return this.isAm;
-    }
-
-    fun isPm(): Boolean {
-        return !this.isAm;
+    fun getSecond(): Int {
+        return this.second
     }
 
     override fun toString(): String {
-        return hour.toString() + ":" + this.min
+        return this.hour.toString() + ":" + this.min + ":" + this.second
     }
 }
